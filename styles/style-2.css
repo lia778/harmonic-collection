@@ -14,7 +14,9 @@ body {
 .video {
     width: 1920;
     height: 1080;
-
+    position: relative;
+    left: 600px;
+    top: 325px;
 }
 
 h1 {
@@ -28,13 +30,9 @@ h1 {
 
 h2 {
     font-size: 48px;
-}
-
-details {
-    font-size: 18px;
-}
-
-summary {
-    font-size: 48px;
     font-weight: 600;
+}
+
+.lyrics {
+    font-size: 16;
 }
