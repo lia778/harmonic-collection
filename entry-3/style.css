@@ -5,6 +5,10 @@ body {
 header {
     background-color: gold;
     padding: 1em;
+    position: fixed
+    top: 0;
+    width: 100%;
+    
 }
 
 main {
