@@ -2,8 +2,15 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    color: #ce3a4e;
-    background-color: rgb(32, 32, 32); 
+    color: #6b4d35;
+    background-color: rgb(255, 202, 142); 
+}
+
+@media (max-width: 375px) {
+    p {
+      font-size: 1.25rem;  
+      line-height: 1.5;
+    }
 }
 
 .container {
@@ -12,10 +19,10 @@ body {
 }
 
 .title {
-    color: rgba(255, 131, 203, 0.658);
+    color: rgb(255, 212, 221);
     font-size: 45px;
     text-align: center;
-    border: 7px #ce3a4e solid;
+    border: 7px #6b4d35 solid;
     margin-top: 80px;
     padding: 1%;
     border-radius: 40px 
@@ -38,8 +45,8 @@ body {
 }
 
 header {
-    background-color: #ce3a4e;
-    color: rgba(255, 131, 203, 0.658);
+    background-color: rgb(255, 212, 221);
+    color: #6b4d35;
     font-size: 12pt;
     opacity: 85%;
     padding: 1em;
