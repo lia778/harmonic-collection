@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #ce3a4e;
+    background-color: rgb(32, 32, 32); 
+}
+
+.container {
+    margin: auto;
+    width: 85%;
+}
+
+.title {
+    color: rgba(255, 131, 203, 0.658);
+    font-size: 45px;
+    text-align: center;
+    border: 7px #ce3a4e solid;
+    margin-top: 80px;
+    padding: 1%;
+    border-radius: 40px 
+}
+
+.video {
+    margin-top: 80px;
+}
+
+.h2 {
+    background-color: rgba(255, 131, 203, 0.658);
+}
+
+.thoughts {
+    margin-top: 80px;
+}
+
+.lyrics {
+    margin-top: 80px;
+}
+
+header {
+    background-color: #ce3a4e;
+    color: rgba(255, 131, 203, 0.658);
+    font-size: 12pt;
+    opacity: 85%;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
