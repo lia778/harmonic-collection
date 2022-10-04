@@ -6,13 +6,6 @@ body {
     background-color: rgb(255, 202, 142); 
 }
 
-@media (max-width: 375px) {
-    p {
-      font-size: 1.25rem;  
-      line-height: 1.5;
-    }
-}
-
 .container {
     margin: auto;
     width: 85%;
@@ -53,4 +46,11 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+}
+
+@media (max-width: 375px) {
+    p {
+      font-size: 1.25rem;  
+      line-height: 1.5;
+    }
 }
