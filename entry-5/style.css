@@ -4,6 +4,7 @@
     --brand-color: gold;
     --sidebar-color: grey;
     --link-color: red;
+    --body-copy: 16px;
 }
 
 @media (min-width: 768px) {
@@ -11,11 +12,29 @@
         --page-spacing: 24px;
         --font-size: 36px;
     }
+
+    body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+    }
+
+    nav,aside {
+        width: 25%;
+    }
+    
+    article {
+        flex-grow: 1;
+    }
 }
 
 body {
     font-family: sans-serif;
     font-size: var(--body-copy);
+    display: flex;
 }
 
 h1 {
@@ -38,20 +57,14 @@ a {
     color: var(--link-color)
 }
 
-header,
-nav,
-article,
-aside,
-footer, {
+header, nav, article, aside, footer {
     padding: var(--page-spacing);
 }
 
-head,
-footer {
+header, footer {
     background-color: var(--brand-color);
 }
 
-nav,
-aside {
+nav, aside {
     background-color: var(--sidebar-color);
 }
