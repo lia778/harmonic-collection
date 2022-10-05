@@ -1,0 +1,57 @@
+:root {
+    --page-spacing: 24px;
+    --font-size: 36px;
+    --brand-color: gold;
+    --sidebar-color: grey;
+    --link-color: red;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-spacing: 24px;
+        --font-size: 36px;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    font-size: var(--body-copy);
+}
+
+h1 {
+    font-size: calc(var(--body-copy) * 4);
+}
+
+h2 {
+    font-size: calc(var(--body-copy) * 2);
+}
+
+p {
+    max-width: 80ch;
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing);    
+}
+
+a {
+    color: var(--link-color)
+}
+
+header,
+nav,
+article,
+aside,
+footer, {
+    padding: var(--page-spacing);
+}
+
+head,
+footer {
+    background-color: var(--brand-color);
+}
+
+nav,
+aside {
+    background-color: var(--sidebar-color);
+}
