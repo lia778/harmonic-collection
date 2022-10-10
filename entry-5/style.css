@@ -4,9 +4,9 @@
 :root {
     --page-spacing: 24px;
     --font-size: 36px;
-    --brand-color: gold;
-    --sidebar-color: grey;
-    --link-color: red;
+    --brand-color: rgb(76, 196, 196);
+    --sidebar-color: rgb(212, 142, 142);
+    --link-color: rgb(255, 255, 255);
     --body-copy: 16px;
 }
 
@@ -43,6 +43,7 @@ body {
 
 h1 {
     font-size: calc(var(--body-copy) * 4);
+    color: var(--link-color)
 }
 
 h2 {
