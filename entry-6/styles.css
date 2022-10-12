@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+:root {
+    --page-spacing: 30px;
+    --font-size: 36px;
+    --brand-color: rgb(255, 220, 22);
+    --sidebar-color: rgb(255, 255, 255);
+    --link-color: rgb(51, 51, 51);
+    --body-copy: 16px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-spacing: 30px;
+        --font-size: 36px;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "nav   article aside"
+            "footer footer footer;"
+    }
+
+    header { grid-area: header; }
+    nav { grid-area: nav; }
+    article { grid-area: article; }
+    aside { grid-area: aside; }
+    footer { grid-area: footer; }
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #232323;
+    font-size: var(--body-copy);
+}
+
+h1 {
+    font-size: calc(var(--body-copy) * 4);
+    color: white
+}
+
+h2 {
+    font-size: calc(var(--body-copy) * 2);
+}
+
+.lyrics {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 18px
+}
+
+p {
+    max-width: 80ch;
+    margin-bottom: var(--page-spacing);
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing);    
+}
+
+a {
+    color: var(--link-color)
+}
+
+header, nav, article, aside, footer {
+    padding: var(--page-spacing);
+}
+
+header, footer {
+    background-color: var(--brand-color);
+}
+
+nav, aside {
+    background-color: var(--sidebar-color);
+}
+
+.video {
+    margin-top: var(--page-spacing);
+    margin-bottom: var(--page-spacing);
+}
+
+ul {
+    margin-bottom: 100px;
+    font-size: 18px
+}
+
+a {
+    font-size: 30px;
+}
