@@ -15,50 +15,88 @@ body {
     color: #272727;
     background-color: rgb(70, 70, 70);
     height: 100vh;
+    margin: auto;
+    width: 85%;    
     display: grid; 
     place-items: center center;
 }
 
     .container {
+        width: 85%;    
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (400px,1fr));
+        grid-template-columns: repeat(3, 1fr);
         padding: 20px;
-        grid-gap: 40px;
-        font-size: 48px;        
+        grid-gap: 40px;        
     }
 
-    .entry-1 {
+    h1 {
+        background: radial-gradient(circle, rgba(200, 255, 255,1) 0%, rgba(245,210,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 72px;
+        font-weight: 700;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .entry {
         background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-        border-radius: 2rem;
+        border-radius: 35px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.4);
+
     }
 
-    .card-1 {
+    .card {
+        position: relative;
 
+    }
+
+    .text {
+        padding: 50px 20px;
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
     }
 
     .bg-1 {
         width: 100%;
         display: block;
-        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        border-radius: 35px 35px 0 0;
     }
 
-    .entry-2 {
-        background-color: rgb(253, 151, 16);
-        padding: 1em;
+    .bg-2 {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border-radius: 35px 35px 0 0;
     }
 
-    .entry-3 {
-        background-color: rgb(255, 251, 2);
-        padding: 1em;
+    .bg-3 {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border-radius: 35px 35px 0 0;
     }
 
-    .entry-4 {
-        background-color: rgb(8, 255, 29);
-        padding: 1em;
+    .bg-4 {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border-radius: 35px 35px 0 0;
     }
 
-    .entry-5 {
-        background-color: rgb(27, 145, 255);
-        padding: 1em;
+    .bg-5 {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border-radius: 35px 35px 0 0;
     }
 
+@media screen and (max-width: 956px) {
+    .container {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
