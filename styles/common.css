@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+:root {
+    --page-spacing: 30px;
+    --font-size: 36px;
+    --brand-color: rgb(255, 220, 22);
+    --sidebar-color: rgb(255, 255, 255);
+    --link-color: rgb(51, 51, 51);
+    --body-copy: 16px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-spacing: 30px;
+        --font-size: 36px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        font-size: 48px;
+    }
+
+    .entry-1 {
+        background-color: rgb(241, 37, 37);
+        padding: 1em;
+    }
+
+    .entry-2 {
+        background-color: rgb(253, 151, 16);
+        padding: 1em;
+    }
+
+    .entry-3 {
+        background-color: rgb(255, 251, 2);
+        padding: 1em;
+    }
+
+    .entry-4 {
+        background-color: rgb(8, 255, 29);
+        padding: 1em;
+    }
+
+    .entry-5 {
+        background-color: rgb(27, 145, 255);
+        padding: 1em;
+    }
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #272727;
+    background-color: rgb(245, 245, 245); 
+}
+
