@@ -1,31 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
 
+:root {
+    --page-spacing: 30px;
+    --font-size: 36px;
+    --brand-color: rgba(93, 148, 250, 0.658);
+    --sidebar-color: rgb(255, 238, 230);
+    --link-color: rgb(51, 51, 51);
+    --body-copy: 16px;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     color: rgb(77, 77, 77);
     background-color: rgb(255, 238, 230);
 }
 
-.container {
-    margin: auto;
-    width: 75%;
+@media (min-width: 768px) {
+    :root {
+        --page-spacing: 30px;
+        --font-size: 36px;
+    }
+
+    body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    main {
+        display: flex;
+    }
+
+    nav,aside {
+        width: 20%;
+    }
+    
+    article {
+        flex-grow: 1;
+    }
 }
 
-.video {
-    width: 1920;
-    height: 1080;
-    position: relative;
-    left: 600px;
-    top: 325px;
-}
 
 h1 {
-    color: rgba(93, 148, 250, 0.658);
+    color: rgba(255, 255, 255, 0.822);
     font-size: 72px;
-    text-align: center;
-    border: 10px rgba(255, 111, 54, 0.658) solid;
-    padding: 5%;
-    border-radius: 300px 
+    padding: 2%;
 }
 
 h2 {
@@ -35,4 +59,43 @@ h2 {
 
 .lyrics {
     font-size: 16;
+}
+
+p {
+    max-width: 80ch;
+    margin-bottom: var(--page-spacing);
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing);    
+}
+
+a {
+    color: var(--link-color)
+}
+
+header, nav, article, aside, footer {
+    padding: var(--page-spacing);
+}
+
+header, footer {
+    background-color: var(--brand-color);
+}
+
+nav, aside {
+    background-color: var(--sidebar-color);
+}
+
+.video {
+    margin-top: var(--page-spacing);
+    margin-bottom: var(--page-spacing);
+}
+
+ul {
+    margin-bottom: 100px;
+    font-size: 18px
+}
+
+a {
+    font-size: 30px;
 }

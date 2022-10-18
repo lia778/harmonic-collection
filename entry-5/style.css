@@ -23,7 +23,7 @@
 
     header {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: end;
     }
 
@@ -49,8 +49,6 @@ body {
 h1 {
     font-size: calc(var(--body-copy) * 4);
     color: white
-    
-    
 }
 
 h2 {
