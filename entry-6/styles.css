@@ -95,6 +95,8 @@ a {
 
 footer {
     background-color: var(--brand-color);
+    border-radius: 35px;
+    margin: 20px;
 }
 
 nav, aside {
