@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+:root {
+    --page-spacing: 30px;
+    --font-size: 36px;
+    --brand-color: rgb(197, 53, 108);
+    --sidebar-color: rgb(255, 240, 241);
+    --link-color: #99365c;
+    --body-copy: 16px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-spacing: 30px;
+        --font-size: 36px;
+    }
+
+    body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        display: flex;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, .5);
+        min-height: 30vh;
+        position: relative; 
+        overflow: hidden;
+        border-radius: 35px;
+
+    }
+
+    main {
+        display: flex;
+    }
+
+    nav,aside {
+        width: 20%;
+    }
+    
+    article {
+        flex-grow: 1;
+    }
+    
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #99365c;
+    background-color: var(--sidebar-color);
+    font-size: var(--body-copy);
+}
+
+h1 {
+    font-size: calc(var(--body-copy) * 4);
+    font-weight: 600;
+    background: radial-gradient(circle, rgb(255, 199, 227) 0%, rgb(189, 188, 248) 53%, rgb(193, 232, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: calc(var(--body-copy) * 2);
+}
+
+.lyrics {
+    font-size: 18px
+}
+
+p {
+    max-width: 80ch;
+    margin-bottom: var(--page-spacing);
+}
+
+main {
+    background-color: var(--sidebar-color);
+    margin-top: 40px;
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing);    
+}
+
+a {
+    color: var(--link-color)
+}
+
+.preview, .lyrics, nav, article, aside, footer {
+    padding: var(--page-spacing);
+}
+
+
+footer {
+    background-color: var(--brand-color);
+    border-radius: 35px;
+    margin: 20px;
+}
+
+nav, aside {
+    background-color: var(--sidebar-color);
+}
+
+ul {
+    margin-bottom: 100px;
+    font-size: 18px
+}
+
+a {
+    font-size: 30px;
+}
+
+#img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    min-width: 100%;
+    min-height:100%;
+}
+
