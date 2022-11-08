@@ -21,6 +21,19 @@
         flex-wrap: wrap;
     }
 
+    .banner {
+        display: flex;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, .5);
+        min-height: 30vh;
+        position: relative; 
+        overflow: hidden;
+        border-radius: 35px;
+
+    }
+
     main {
         display: flex;
     }
@@ -52,10 +65,11 @@ h1 {
 
 h2 {
     font-size: calc(var(--body-copy) * 2);
+    margin-top: 40px;
 }
 
 .lyrics {
-    font-size: 18px
+    font-size: 18px;
 }
 
 p {
@@ -98,17 +112,6 @@ ul {
 
 a {
     font-size: 30px;
-}
-
-.banner {
-    margin: 30px;
-    background: rgba(0, 0, 0, .5);
-    min-height: 30vh;
-    position: relative; 
-    overflow: hidden;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #img {

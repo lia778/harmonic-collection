@@ -4,9 +4,9 @@
 :root {
     --page-spacing: 30px;
     --font-size: 36px;
-    --brand-color: rgb(197, 53, 108);
-    --sidebar-color: rgb(255, 240, 241);
-    --link-color: #99365c;
+    --brand-color: rgb(58, 97, 121);
+    --sidebar-color: rgb(172, 172, 172);
+    --link-color: #1b1b1b;
     --body-copy: 16px;
 }
 
@@ -35,7 +35,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    color: #99365c;
+    color: #1b1b1b;
     background-color: var(--sidebar-color);
     font-size: var(--body-copy);
 }
@@ -43,7 +43,7 @@ body {
 h1 {
     font-size: calc(var(--body-copy) * 4);
     font-weight: 600;
-    background: radial-gradient(circle, rgb(255, 199, 227) 0%, rgb(189, 188, 248) 53%, rgb(193, 232, 255) 100%);
+    background: radial-gradient(circle, rgb(199, 255, 232) 0%, rgb(177, 233, 255) 53%, rgb(181, 201, 255) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -61,10 +61,15 @@ h1 {
 
 h2 {
     font-size: calc(var(--body-copy) * 2);
+    margin-top: 40px;
 }
 
 .lyrics {
-    font-size: 18px
+    font-size: 18px;
+}
+
+.about{
+    font-size: 18px;
 }
 
 p {
@@ -126,6 +131,7 @@ a {
 
 #img {
     position: absolute;
+    top: -40%;
     z-index: -1;
     width: 100%;
 }
