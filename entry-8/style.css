@@ -99,7 +99,7 @@ a {
 
 footer {
     background-color: var(--brand-color);
-    border-radius: 35px;
+    border-radius: 25px;
     margin: 20px;
 }
 
@@ -120,7 +120,7 @@ a {
     background: rgba(0, 0, 0, .5);
     height: 20vh;
     margin: 20px;
-    border-radius: 35px;
+    border-radius: 25px;
     position: relative; 
     overflow: hidden;
     background-position: center;
