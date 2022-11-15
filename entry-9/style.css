@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+:root {
+    --page-spacing: 30px;
+    --font-size: 36px;
+    --brand-color: rgb(58, 121, 111);
+    --sidebar-color: rgb(255, 248, 223);
+    --link-color: #124439;
+    --body-copy: 16px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --page-spacing: 30px;
+        --font-size: 36px;
+    }    
+
+    body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }    
+    main {
+        display: flex;
+    }
+
+    nav,aside {
+        width: 20%;
+    }
+    
+    article {
+        flex-grow: 1;
+    }
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #124439;
+    background-color: var(--sidebar-color);
+    font-size: var(--body-copy);
+}
+
+h1 {
+    font-size: calc(var(--body-copy) * 4);
+    font-weight: 600;
+    background: radial-gradient(circle, rgb(227, 255, 214) 0%, rgb(177, 255, 242) 53%, rgb(181, 219, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 629px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+h2 {
+    font-size: calc(var(--body-copy) * 2);
+    margin-top: 40px;
+}
+
+.lyrics {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.about{
+    font-size: 18px;
+}
+
+p {
+    max-width: 80ch;
+    margin-bottom: var(--page-spacing);
+    line-height: 2em;
+}
+
+main {
+    background-color: var(--sidebar-color);
+    margin-top: 40px;
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing);    
+}
+
+a {
+    color: var(--link-color)
+}
+
+.preview, .lyrics, nav, article, aside, footer {
+    padding: var(--page-spacing);
+}
+
+
+footer {
+    background-color: var(--brand-color);
+    border-radius: 25px;
+    margin: 20px;
+}
+
+nav, aside {
+    background-color: var(--sidebar-color);
+}
+
+ul {
+    margin-bottom: 100px;
+    font-size: 18px
+}
+
+a {
+    font-size: 30px;
+}
+
+.banner {
+    background: rgba(0, 0, 0, .5);
+    height: 20vh;
+    margin: 20px;
+    border-radius: 25px;
+    position: relative; 
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 629px) {
+    .banner {
+        height: 12vh;
+    }
+}
+
+
+
+#img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
